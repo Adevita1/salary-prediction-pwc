@@ -98,6 +98,27 @@ Jupyter Notebook, VS Code, Git, GitHub
 📦 Requisitos del sistema
 Incluidos en requirements.txt (mínimos) y requirements_full.txt (completo del entorno local de desarrollo).
 
+
+✅ Conclusiones y Mejoras Futuras
+Este proyecto permitió construir un modelo robusto para predecir salarios utilizando variables demográficas, laborales y texto libre. Se combinaron técnicas de ingeniería de features, codificación categórica, vectorización TF-IDF y modelos de regresión.
+
+📊 Resultados clave:
+
+R² ≈ 0.87: el modelo explica gran parte de la variabilidad del salario.
+
+Las variables más importantes fueron edad, experiencia laboral y términos clave en la descripción del puesto.
+
+🚀 Próximos pasos sugeridos:
+
+Incorporar modelos de NLP más avanzados (como embeddings o transformers).
+
+Realizar ajuste de hiperparámetros.
+
+Implementar validación cruzada para mayor robustez.
+
+Explorar más fuentes de datos y enriquecer las variables.
+
+
 👤 Autor
 Adrián Nicolás
 Data Engineer & Científico de Datos
