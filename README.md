@@ -1,20 +1,36 @@
+# 💼 Salary Prediction Challenge - PwC
+
+Este proyecto aborda un desafío de ciencia de datos para predecir salarios utilizando características como edad, género, educación, experiencia, título laboral y descripción del puesto.
+
+Se realizaron tareas de análisis exploratorio, ingeniería de features, entrenamiento de modelos de regresión y evaluación de rendimiento, siguiendo las mejores prácticas de código modular y notebook explicativa.
+
+---
+
+## 📁 Estructura del Proyecto
+
+```bash
 salary-prediction-pwc/
-├── notebooks/ # Exploración y experimentación inicial
-│ └── exploration.ipynb
-├── src/ # Código modular
-│ ├── data_preprocessing.py
-│ ├── feature_engineering.py
-│ ├── model_training.py
-│ ├── model_evaluation.py
-│ ├── inference.py
-│ ├── save_model.py
-│ ├── utils.py
-│ └── init.py
-├── data/ # Directorio para datasets locales (vacío)
-├── requirements.txt # Requisitos mínimos
-├── requirements_full.txt # Todos los paquetes de desarrollo usados
-├── README.md
-└── Data Scientist - Challenge (1) 1.pdf
+├── notebooks/                  # Exploración y análisis inicial
+│   └── exploration.ipynb
+├── src/                        # Código modular
+│   ├── data_preprocessing.py
+│   ├── feature_engineering.py
+│   ├── model_training.py
+│   ├── model_evaluation.py
+│   ├── inference.py
+│   ├── save_model.py
+│   ├── utils.py
+│   └── __init__.py
+├── data/                       # Directorio para datasets locales
+│   ├── salary.csv
+│   ├── people.csv
+│   └── descriptions.csv
+├── requirements.txt            # Requisitos mínimos para ejecutar
+├── requirements_full.txt       # Requisitos completos del entorno
+├── .gitignore                  # Archivos a excluir en Git
+├── README.md                   # Este archivo
+└── Data Scientist - Challenge (1) 1.pdf  # Enunciado original del desafío
+
 
 🚀 Cómo ejecutar el proyecto
 1. Clonar el repositorio
