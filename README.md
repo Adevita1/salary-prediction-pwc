@@ -19,8 +19,7 @@ salary-prediction-pwc/
 │   ├── model_evaluation.py
 │   ├── inference.py
 │   ├── save_model.py
-│   ├── utils.py
-│   └── __init__.py
+│   └── main.py
 ├── data/                       # Directorio para datasets locales
 │   ├── salary.csv
 │   ├── people.csv
@@ -29,7 +28,7 @@ salary-prediction-pwc/
 ├── requirements_full.txt       # Requisitos completos del entorno
 ├── .gitignore                  # Archivos a excluir en Git
 ├── README.md                   # Este archivo
-└── Data Scientist - Challenge (1) 1.pdf  # Enunciado original del desafío
+└── Data Scientist - Challenge.pdf  # Enunciado original del desafío
 
 
 🚀 Cómo ejecutar el proyecto
@@ -52,13 +51,15 @@ source venv/bin/activate
 
 pip install -r requirements.txt
 
+
+
 4. Ejecutar desde el script principal
 
-python main.py
+# En PowerShell (Windows)
+$env:PYTHONPATH="."; python src/main.py
 
-5. Alternativamente, podés explorar la notebook:
-
-jupyter notebook notebooks/exploration.ipynb
+# En Linux/macOS
+PYTHONPATH=. python src/main.py
 
 
 📊 Resultados y Métricas
@@ -70,25 +71,27 @@ Limpieza y validación de datos.
 
 Incorporación de nuevas features:
 
-Description_Length: longitud del campo Description.
-
-Sentiment_Polarity: análisis de polaridad semántica del texto.
+Title Length: longitud del campo Job Title.
 
 Modelo final
 Modelo: Random Forest Regressor
 
-R² Score: 0.93
+R² Score: 0.92
 
-MSE: Aproximadamente 189M
+MSE: Aproximadamente 200M
+
+🧠 Inference de prueba
+Se integró una predicción simulada con una fila nueva (no vista) con las mismas transformaciones aplicadas durante el entrenamiento, asegurando compatibilidad de columnas y estructura.
+
+Ejemplo de salida:
+
+💡 Predicción salarial estimada: 35800.0
+
 
 📚 Herramientas utilizadas
 Python, Pandas, NumPy
 
 Scikit-learn, Seaborn, Matplotlib
-
-TextBlob (para análisis de sentimiento)
-
-Optuna (para tuning opcional)
 
 Jupyter Notebook, VS Code, Git, GitHub
 
@@ -98,5 +101,5 @@ Incluidos en requirements.txt (mínimos) y requirements_full.txt (completo del e
 👤 Autor
 Adrián Nicolás
 Data Engineer & Científico de Datos
-🔗 [LinkedIn](https://www.linkedin.com/in/adevita1/)
-💻 [GitHub](https://github.com/Adevita1)
+🔗 https://www.linkedin.com/in/adevita1/
+💻 https://github.com/Adevita1
