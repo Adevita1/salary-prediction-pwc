@@ -112,6 +112,38 @@ Jupyter Notebook, VS Code, Git, GitHub
 📦 Requisitos del sistema
 Incluidos en requirements.txt (mínimos) y requirements_full.txt (completo del entorno local de desarrollo).
 
+🤖 Técnicas de Machine Learning utilizadas
+Este proyecto empleó técnicas de aprendizaje supervisado para resolver un problema de regresión (predicción de salarios a partir de variables demográficas y laborales).
+
+🧠 Modelos utilizados
+Linear Regression
+Utilizado como modelo base simple para establecer una línea de comparación.
+
+Dummy Regressor
+Baseline que predice siempre la media del salario, útil para validar si los modelos agregan valor real.
+
+Random Forest Regressor (modelo final)
+Modelo de ensamble basado en múltiples árboles de decisión. Captura relaciones no lineales, es robusto frente a outliers y maneja bien datos mixtos. Mostró el mejor rendimiento general.
+
+🧰 Técnicas de Preprocesamiento y Feature Engineering
+One-Hot Encoding
+Conversión de variables categóricas (como género o educación) en variables binarias.
+
+TF-IDF Vectorization
+Vectorización del campo description (texto libre) para capturar información semántica relevante para el salario.
+
+Creación de nuevas features
+
+title_length: longitud del título del puesto como proxy de nivel de responsabilidad.
+
+📏 Evaluación y Validación
+Cross-Validation
+Validación cruzada para medir la robustez del modelo en distintos splits.
+
+Bootstrap Confidence Intervals
+Estimación de intervalos de confianza para métricas como R², MAE y MSE, aportando una medida de incertidumbre y estabilidad.
+
+
 
 ✅ Conclusiones y Mejoras Futuras
 Este proyecto permitió construir un modelo robusto para predecir salarios utilizando variables demográficas, laborales y texto libre. Se combinaron técnicas de ingeniería de features, codificación categórica, vectorización TF-IDF y modelos de regresión.
