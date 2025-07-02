@@ -1,0 +1,21 @@
+# Carpetas y archivos generados automáticamente
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints/
+*.egg-info/
+.env
+.venv
+env/
+venv/
+.DS_Store
+
+# Archivos temporales de Jupyter
+.ipynb_checkpoints/
+*.swp
+*.bak
+*.tmp
+
+# Archivos de entorno virtual
+.idea/
+.vscode/
+*.log
