@@ -1,25 +1,16 @@
 # src/inference.py
 
-import pandas as pd
 import joblib
-from src.data_preprocessing import preprocess_input_data
-from src.feature_engineering import add_features
 
-def predict_with_model(model_path, input_df=None):
-    """
-    Carga un modelo entrenado y predice el salario para un input dado.
-    Si no se pasa un input_df, se carga desde 'data/example_input.csv'.
-    """
-    if input_df is None:
-        input_df = pd.read_csv("data/example_input.csv")
-
-    # Preprocesar el input
-    df = preprocess_input_data(input_df)
-    df = add_features(df)
-
-    # Asegurarse de que las columnas coincidan con el modelo
+def predict_with_model(model_path, sample_input):
+    # Cargar modelo entrenado
     model = joblib.load(model_path)
 
+    # Asegurar que las columnas coincidan con las usadas durante el entrenamiento
+    model_features = model.feature_names_in_
+    df = sample_input.reindex(columns=model_features, fill_value=0)
+
+    # Inferencia
     prediction = model.predict(df)
-    print(f"💰 Predicción del salario: {prediction[0]:,.2f}")
+    print("💡 Predicción salarial estimada:", prediction[0])
 

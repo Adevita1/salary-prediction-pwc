@@ -23,3 +23,5 @@ def train_model(df):
 
     joblib.dump(model, "model.pkl")
     print("✅ Modelo guardado como model.pkl")
+
+    return model, X_test, y_test

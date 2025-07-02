@@ -16,6 +16,14 @@ def load_data():
 
     return df
 
+def add_features(df):
+    # Ejemplo básico: agregar una columna de longitud del título
+    df = df.copy()
+    df["Title Length"] = df["Job Title"].apply(lambda x: len(str(x)))
+    
+    # Podés agregar más features aquí
+    return df
+
 
 
 
