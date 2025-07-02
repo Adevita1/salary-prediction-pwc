@@ -1,9 +1,23 @@
 # 💼 Salary Prediction Challenge - PwC
 
-Este proyecto aborda un desafío de ciencia de datos para predecir salarios utilizando características como edad, género, educación, experiencia, título laboral y descripción del puesto.
+🧾 Descripción del Proyecto
+Este proyecto fue desarrollado como parte de un desafío técnico de PwC orientado a la predicción de salarios utilizando técnicas de ciencia de datos. Se trabajó con datasets estructurados que incluían información demográfica, laboral y descripciones textuales de los puestos. El objetivo fue construir un modelo robusto y replicable para estimar salarios en USD a partir de múltiples variables.
 
-Se realizaron tareas de análisis exploratorio, ingeniería de features, entrenamiento de modelos de regresión y evaluación de rendimiento, siguiendo las mejores prácticas de código modular y notebook explicativa.
+Durante el desarrollo se aplicaron buenas prácticas como:
 
+Limpieza de datos y validación.
+
+Codificación de variables categóricas.
+
+Generación de features nuevas, como longitud del título.
+
+Vectorización de texto (TF-IDF) a partir de la descripción de cada puesto.
+
+Entrenamiento y evaluación de modelos supervisados, destacando el Random Forest como el modelo de mejor desempeño.
+
+Modularización completa del código (src/) y uso de un notebook (notebooks/exploration.ipynb) como evidencia visual y explicativa.
+
+El resultado fue un modelo con R² ≈ 0.87, capaz de capturar la mayoría de la varianza del salario, y con buen desempeño general.
 ---
 
 ## 📁 Estructura del Proyecto
