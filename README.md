@@ -75,25 +75,6 @@ $env:PYTHONPATH="."; python src/main.py
 # En Linux/macOS
 PYTHONPATH=. python src/main.py
 
-
-📊 Resultados y Métricas
-Se probaron varios modelos de regresión (Lineal, Random Forest, etc.), y se aplicó:
-
-One-Hot Encoding de variables categóricas.
-
-Limpieza y validación de datos.
-
-Incorporación de nuevas features:
-
-Title Length: longitud del campo Job Title.
-
-Modelo final
-Modelo: Random Forest Regressor
-
-R² Score: 0.92
-
-MSE: Aproximadamente 200M
-
 🧠 Inference de prueba
 Se integró una predicción simulada con una fila nueva (no vista) con las mismas transformaciones aplicadas durante el entrenamiento, asegurando compatibilidad de columnas y estructura.
 
@@ -143,6 +124,8 @@ Validación cruzada para medir la robustez del modelo en distintos splits.
 Bootstrap Confidence Intervals
 Estimación de intervalos de confianza para métricas como R², MAE y MSE, aportando una medida de incertidumbre y estabilidad.
 
+R² Score: 0.92
+MSE: Aproximadamente 200M
 
 
 ✅ Conclusiones y Mejoras Futuras
